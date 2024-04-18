@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.lbg.cczone.selenium.ItemTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 2.948 s <<< FAILURE! -- in com.lbg.cczone.selenium.ItemTest
-com.lbg.cczone.selenium.ItemTest.getItems -- Time elapsed: 0.697 s <<< ERROR!
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 2.683 s <<< FAILURE! -- in com.lbg.cczone.selenium.ItemTest
+com.lbg.cczone.selenium.ItemTest.getItems -- Time elapsed: 0.650 s <<< ERROR!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
   (session not created: DevToolsActivePort file doesn't exist)
@@ -34,7 +34,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 		at com.lbg.cczone.selenium.ItemTest.tearDown(ItemTest.java:132)
 		... 3 more
 
-com.lbg.cczone.selenium.ItemTest.createItemPage -- Time elapsed: 0.745 s <<< ERROR!
+com.lbg.cczone.selenium.ItemTest.createItemPage -- Time elapsed: 0.633 s <<< ERROR!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
   (session not created: DevToolsActivePort file doesn't exist)
@@ -66,7 +66,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 		at com.lbg.cczone.selenium.ItemTest.tearDown(ItemTest.java:132)
 		... 3 more
 
-com.lbg.cczone.selenium.ItemTest.deleteItems -- Time elapsed: 0.728 s <<< ERROR!
+com.lbg.cczone.selenium.ItemTest.deleteItems -- Time elapsed: 0.674 s <<< ERROR!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
   (session not created: DevToolsActivePort file doesn't exist)
@@ -98,7 +98,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 		at com.lbg.cczone.selenium.ItemTest.tearDown(ItemTest.java:132)
 		... 3 more
 
-com.lbg.cczone.selenium.ItemTest.checkInItemTest -- Time elapsed: 0.753 s <<< ERROR!
+com.lbg.cczone.selenium.ItemTest.checkInItemTest -- Time elapsed: 0.680 s <<< ERROR!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
   (session not created: DevToolsActivePort file doesn't exist)

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.lbg.cczone.selenium.ShoppingTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.409 s <<< FAILURE! -- in com.lbg.cczone.selenium.ShoppingTest
-com.lbg.cczone.selenium.ShoppingTest.createCart -- Time elapsed: 0.699 s <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.309 s <<< FAILURE! -- in com.lbg.cczone.selenium.ShoppingTest
+com.lbg.cczone.selenium.ShoppingTest.createCart -- Time elapsed: 0.632 s <<< ERROR!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
   (session not created: DevToolsActivePort file doesn't exist)
@@ -34,7 +34,7 @@ Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEd
 		at com.lbg.cczone.selenium.ShoppingTest.tearDown(ShoppingTest.java:112)
 		... 3 more
 
-com.lbg.cczone.selenium.ShoppingTest.deleteCart -- Time elapsed: 0.697 s <<< ERROR!
+com.lbg.cczone.selenium.ShoppingTest.deleteCart -- Time elapsed: 0.662 s <<< ERROR!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: session not created: Microsoft Edge failed to start: crashed.
   (session not created: DevToolsActivePort file doesn't exist)
