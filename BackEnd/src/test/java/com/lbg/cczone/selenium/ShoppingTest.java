@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -33,7 +33,8 @@ public class ShoppingTest {
 
 	@BeforeEach
 	void init() {
-		this.driver = new EdgeDriver();
+//		this.driver = new EdgeDriver();
+		this.driver = new ChromeDriver();
 		this.driver.manage().window().maximize();
 		this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
