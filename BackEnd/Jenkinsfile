@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    stages {
+        stage("install deps") {
+            steps {
+                bat "clean install"
+            }
+        }
+        
+        stage("package") {
+            steps {
+                bat "cd BackEnd\target
+java -jar LegacyProject-0.0.1-SNAPSHOT.jar"
+            }
+        }
+    }
+    
+}
