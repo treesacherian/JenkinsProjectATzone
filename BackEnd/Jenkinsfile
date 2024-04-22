@@ -6,7 +6,7 @@ pipeline {
         stage('Build') { 
         steps {
                bat '''
-               cd Bac2End
+               cd BackEnd
                mvn -B -DskipTests clean package
                '''
             }
@@ -14,7 +14,7 @@ pipeline {
          stage('Test') { 
             steps {
                 bat'''
-               cd Bac2End 
+               cd BackEnd 
                 mvn test
                '''  
             }
@@ -25,7 +25,7 @@ pipeline {
             steps {
             
             bat '''
-            cd Bac2End/target     
+            cd BackEnd/target     
            java -jar LegacyProject-0.0.1-SNAPSHOT.jar
             '''
             
