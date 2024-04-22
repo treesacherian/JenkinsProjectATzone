@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage("install deps") {
             steps {
-                bat "clean install"
+                bat {"cd BackEnd",
+                "clean install"}
             }
         }
         
