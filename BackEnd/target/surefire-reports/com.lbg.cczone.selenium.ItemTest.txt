@@ -1,17 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: com.lbg.cczone.selenium.ItemTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 27.20 s <<< FAILURE! -- in com.lbg.cczone.selenium.ItemTest
-com.lbg.cczone.selenium.ItemTest.getItems -- Time elapsed: 7.473 s <<< ERROR!
-org.openqa.selenium.WebDriverException: 
-unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=124.0.6367.60)
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 38.21 s <<< FAILURE! -- in com.lbg.cczone.selenium.ItemTest
+com.lbg.cczone.selenium.ItemTest.getItems -- Time elapsed: 10.08 s <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"body > div > div:nth-child(3) > div:nth-child(3) > div > div:nth-child(1) > div > div > p:nth-child(2)"}
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1e74043914b849b36b02a77eb720a589, get {url=http://localhost:3000/item}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62372}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62372/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e74043914b849b36b02a77eb720a589
+Command: [8c82dbd9bbbc24a3517c2f2577639618, findElement {using=css selector, value=body > div > div:nth-child(3) > div:nth-child(3) > div > div:nth-child(1) > div > div > p:nth-child(2)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59538}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59538/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c82dbd9bbbc24a3517c2f2577639618
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -24,22 +25,26 @@ Session ID: 1e74043914b849b36b02a77eb720a589
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.lbg.cczone.selenium.ItemTest.getItems(ItemTest.java:69)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.lbg.cczone.selenium.ItemTest.getItems(ItemTest.java:71)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.lbg.cczone.selenium.ItemTest.createItemPage -- Time elapsed: 7.256 s <<< ERROR!
-org.openqa.selenium.WebDriverException: 
-unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=124.0.6367.60)
+com.lbg.cczone.selenium.ItemTest.createItemPage -- Time elapsed: 9.911 s <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#itemName"}
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [36ccf0351844a5be59ad8c0c261c988d, get {url=http://localhost:3000/item}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62398}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62398/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 36ccf0351844a5be59ad8c0c261c988d
+Command: [0e4ef005f864d4c0ac597a05ca33eb63, findElement {using=id, value=itemName}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59567}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59567/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0e4ef005f864d4c0ac597a05ca33eb63
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -52,22 +57,26 @@ Session ID: 36ccf0351844a5be59ad8c0c261c988d
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.lbg.cczone.selenium.ItemTest.createItemPage(ItemTest.java:44)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.lbg.cczone.selenium.ItemTest.createItemPage(ItemTest.java:46)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.lbg.cczone.selenium.ItemTest.deleteItems -- Time elapsed: 7.254 s <<< ERROR!
-org.openqa.selenium.WebDriverException: 
-unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=124.0.6367.60)
+com.lbg.cczone.selenium.ItemTest.deleteItems -- Time elapsed: 8.648 s <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"body > div > div:nth-child(3) > div:nth-child(3) > div > div:nth-child(2) > div > button:nth-child(2)"}
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [436b623d2011b4a61e694ca57db14eef, get {url=http://localhost:3000/item}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62424}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62424/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 436b623d2011b4a61e694ca57db14eef
+Command: [29a914726a974646c5c8f009cb82b818, findElement {using=css selector, value=body > div > div:nth-child(3) > div:nth-child(3) > div > div:nth-child(2) > div > button:nth-child(2)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59597/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29a914726a974646c5c8f009cb82b818
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -80,22 +89,26 @@ Session ID: 436b623d2011b4a61e694ca57db14eef
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.lbg.cczone.selenium.ItemTest.deleteItems(ItemTest.java:84)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.lbg.cczone.selenium.ItemTest.deleteItems(ItemTest.java:86)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.lbg.cczone.selenium.ItemTest.checkInItemTest -- Time elapsed: 5.192 s <<< ERROR!
-org.openqa.selenium.WebDriverException: 
-unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=124.0.6367.60)
+com.lbg.cczone.selenium.ItemTest.checkInItemTest -- Time elapsed: 9.543 s <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"body > div > div:nth-child(3) > div > div:nth-child(4) > div > div > div > div > div.card-text > button:nth-child(2)"}
+  (Session info: chrome=124.0.6367.61)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5b3294baff6066f2f4c3e647559de2a5, get {url=http://localhost:3000/cart}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62450/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5b3294baff6066f2f4c3e647559de2a5
+Command: [ee9057a36795c606db27033f8b11a805, findElement {using=css selector, value=body > div > div:nth-child(3) > div > div:nth-child(4) > div > div > div > div > div.card-text > button:nth-child(2)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.61, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59626}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59626/devtoo..., se:cdpVersion: 124.0.6367.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee9057a36795c606db27033f8b11a805
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -108,8 +121,11 @@ Session ID: 5b3294baff6066f2f4c3e647559de2a5
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.lbg.cczone.selenium.ItemTest.checkInItemTest(ItemTest.java:103)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.lbg.cczone.selenium.ItemTest.checkInItemTest(ItemTest.java:105)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
